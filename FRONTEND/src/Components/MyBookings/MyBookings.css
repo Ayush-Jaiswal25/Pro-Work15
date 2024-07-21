@@ -1,0 +1,31 @@
+#MyBookings{
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+}
+.mybooking-body{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    width: 100%;
+    /* padding-left: 2.5rem; */
+}
+.mybookingtitle{
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+}
+.mybook-body{
+    position: relative;
+    margin: 2rem 3rem;
+    height: 15rem;
+    width: 80%;
+
+}
+
+.viceeee{
+    height: 2.5rem;
+    width: 5rem;
+}

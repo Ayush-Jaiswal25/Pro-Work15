@@ -1,0 +1,82 @@
+#About{
+    height: 120vh;
+    width: 100vw;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.about-text{
+    height: 15vh;
+    width: 100%;
+    margin-left: 2.5rem;
+}
+.about-p{
+    font-size: 1.4rem;
+}
+.about-content{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 100%;
+}
+.founder-box{
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+.founders-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+    height: 21.5rem;
+    width: 17.5rem;
+    border-radius: 1.2rem;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px black;
+    margin: 1.5rem 0rem;
+}
+
+.founder-photo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.Harshika-photo ,.Ayush-photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.foun-title1{
+    margin-top: -1rem;
+    color: rgb(55, 55, 55);
+}
+.des2{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+}
+
+.link:hover{
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 4px rgb(11, 134, 202);
+}
+.j{
+    padding: 0.2rem;
+}
+.founders-div a img{
+    cursor: pointer;
+    margin: 0rem 0.5rem;
+    height: 3rem;
+}

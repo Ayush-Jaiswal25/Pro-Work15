@@ -1,0 +1,109 @@
+#Hero{
+    width: 100vw;
+    height: 104vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: red solid 2px; */
+}
+.hero-description{
+    display: flex;
+    justify-content: end;
+    margin-top: 5rem;
+    height: 34%;
+    width: 100vw !important;
+    margin-bottom: 0.7rem;
+    /* border: 2px solid rgb(235, 166, 18); */
+    
+}
+.subHeroDes{
+    margin-right: 3rem;
+    width: 35rem;
+    height: 100%;
+    /* border: 2px solid rgb(26, 224, 211); */
+}
+.hero-title{
+    cursor: context-menu;
+    width: 35vw;
+    height: 52vh;
+    z-index: 10;
+    margin-bottom: -0.5rem;
+    /* border: 2px solid rgb(102, 0, 255); */
+}
+.hero-title h1{
+    color: rgb(45, 54, 52);
+    font-size: 8rem;
+    line-height: 5.5rem;
+    /* border: 2px solid rgb(235, 166, 18); */
+}
+
+.hero-description-btn{
+    cursor: pointer;
+    position: relative;
+    top: 3rem;
+    margin: 0rem 0.5rem ;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    font-size: 1rem;
+    box-shadow: 1px 1px 3px black;
+}
+.hero-description-btn:active{
+    box-shadow: 0 0 0 black;
+}
+.servicesbtn{
+    background-color: transparent;
+}
+.heroscroll{
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    /* border: 2px solid yellow; */
+}
+.aarrow-down{
+    height: 2rem;
+    rotate: 90deg;
+}
+@media (max-width: 1020px){
+    .subHeroDes{
+        width: 32rem;
+    }
+    .hero-title h1{
+        font-size: 8rem;
+        line-height: 5.5rem;
+    }
+}
+@media (max-width: 960px){
+    .subHeroDes{
+        width: 32rem;
+        margin-right: 1rem;
+    }   
+}
+@media (max-width: 940px){
+    .hero-description-btn{
+        top: 0.5rem;
+    }
+}
+@media (max-width: 545px){
+    .subHeroDes{
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 430px){
+    .hero-description{
+        margin-top: 8rem;
+    }
+    .hero-description-btn{
+        top: 3rem;
+    }
+    .hero-title{
+        margin-bottom: -5rem;
+    }
+    .heroscroll{
+        cursor: pointer;
+        position: relative;
+        bottom: -2rem;
+        right: 1rem;
+        /* border: 2px solid yellow; */
+    }
+}

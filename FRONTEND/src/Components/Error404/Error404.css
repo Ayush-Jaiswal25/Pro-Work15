@@ -1,0 +1,62 @@
+#Error404{
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+    background-color: white;
+}
+.er404heading{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.er404{
+    width: 100%;
+    /* border: 2px solid red; */
+    align-items: end;
+    justify-content: center;
+    display: flex;
+}
+.e404{
+    font-size: 10rem;
+}
+.e0{
+    color: rgb(73, 215, 168);
+    /* text-shadow: 4px 4px 1px #014b2f; */
+    text-shadow: 4px 5px 1px #091711;
+    position: relative;
+    left: 1.2rem;
+    margin: 0rem 4rem;
+    rotate: 50deg;
+    /* font-family: monospace; */
+}
+.e4{
+    font-family:cursive ;
+    text-shadow: 4px 10px 1px #062020;
+    color: rgb(0, 200, 255);
+}
+.pagenotfound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.pnf{
+    color: red;
+    text-shadow: 4px 4px 1px #140909;
+}
+.home404{
+    border: 2px solid rgb(23, 229, 191);
+    background-color: rgb(198, 240, 226);
+    color: rgb(2, 59, 40);
+    border-radius: 0.8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    width: 5rem;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+.home404:active{
+    box-shadow: 2px 2px 8px black;
+}

@@ -1,0 +1,27 @@
+#Failed{
+    height: 70vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.failedh1{
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    color: rgb(227, 48, 31);
+    text-shadow: 2px 2px 4px rgb(195, 98, 24);
+}
+.successh3{
+    margin-top: 13rem;
+    position: relative;
+    right: 22.5rem;
+    color: blue;
+}
+.payID{
+    color: black;
+}
+.suc404{
+    position: relative;
+    top: 16rem;
+    right: 43rem;
+}

@@ -1,0 +1,8 @@
+#Home{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    /* border: 2px solid rgb(10, 124, 206); */
+}
+

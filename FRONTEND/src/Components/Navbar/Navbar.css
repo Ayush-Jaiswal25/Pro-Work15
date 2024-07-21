@@ -1,0 +1,225 @@
+.walletDiv{
+    position: absolute;
+    display: flex;
+    height: 3.5rem;
+    width: 14rem;
+    margin-left: 37vw;
+    border: 2px solid black;
+    z-index: 2500 !important;
+    cursor: pointer;
+}
+.walletAmout{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.walletwthdraw{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.walletwthdrawDiv{
+    display: none;
+    height: 80vh;
+    width: 40vw;
+    position: absolute;
+    top: 10vh;
+    left: 30vw;
+    border: 2px solid red;
+}
+.walletwiddisplay{
+    display: flex;
+}
+
+.nav{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    /* border: 2px solid red; */
+}
+.navbarHide{
+    visibility: hidden;
+}
+
+/* Navbar */
+.navbar{
+    height: 100%;
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0.9rem;
+    padding-bottom: 1rem;
+    /* border: 2px solid rgb(57, 1, 147); */
+}
+.navbar-left h1{
+    color: black;
+    font-size: 1.9rem;
+    padding: 0.5rem 0rem;
+    /* border: 2px solid red; */
+}
+b{
+    background-color: black;
+    color: white;
+    padding: 0 0.1rem;
+    border-radius: 0.6rem;
+    border: 2px black solid;
+} 
+/* Navbar Right */
+.navbar-right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.navbar-options-phone{
+    display: none;
+}
+.navbar-options-laptop{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.jobs-explo{
+    color: black;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 2px transparent solid;
+    cursor: pointer;
+}
+#exploreCheck{
+    display: none;
+}
+.jobs-explo:hover{
+    background-color: black;
+    color: white !important;
+    border-radius: 5px;
+    border: 2px black solid;
+}
+#user-btn{
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+#user-btn img{    
+    height: 2.5rem;
+}
+.btn-sign{
+    position: relative;
+    color: rgba(7, 93, 73, 0.926);
+    top: -0.1rem;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 950px){
+    .navbar-right{
+        width: 45%;
+    }
+}
+@media (max-width: 850px){
+    .navbar-right{
+        width: 50%;
+    }
+}
+@media (max-width: 750px){
+    .nav{
+        height: 80px;
+    }
+    .navbar-left h1{
+        font-size: 1.5rem;
+    }
+    b{
+        border-radius: 0.5rem;
+    }
+    .navbar-options-laptop{
+        width: 90%;
+    }
+}
+@media (max-width: 670px){
+    .navbar-options-laptop, .jobs-explo{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 570px){
+    .navbar{
+        margin-top: 0.5rem;
+    }
+    .navbar-left h1{
+        padding:0.5rem;
+    }
+    b{
+        padding: 0.2rem;
+    }
+    .navbar-right{
+        justify-content: end;
+    }
+    .navbar-options-laptop{
+        display: none;
+    }
+    .navbar-options-phone{
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    .sign-close-phone{
+        padding: 0.5rem;
+        height: 2.5rem;
+        z-index: 2050;
+        cursor: pointer;
+    }
+    .phoneuserbtn{
+        z-index: 2050;
+    }
+    .nav-phone-list{
+        position: absolute;
+        top: -110vh;
+        left: 0rem;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+        color: black;
+        border: 2px solid rebeccapurple;
+        z-index: 2010;
+    }
+    .phone-btn-sign{
+        position: relative;
+        margin-left: 0.5rem;
+    }
+    .phone-user-btn{
+        margin-left: 0.5rem;
+    }
+    .phone-jobs-explo{
+        display: block;
+        color: black;
+        font-size: 1.5rem;
+        line-height: 4rem;
+        margin-left: 2rem;
+    }
+    .nav-phone-list-moveUp{
+        transform: translateY(-110vh);
+        transition: 1s ease;
+    }
+    .nav-phone-list-moveDown{
+        transform: translateY(110vh);
+        transition: 0.8s ease;
+    }
+}
+@media (max-width: 430px){
+    b{
+        padding: 0.3rem 0.2rem;
+    }
+}

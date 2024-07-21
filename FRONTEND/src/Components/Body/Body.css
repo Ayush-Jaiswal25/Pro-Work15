@@ -1,0 +1,286 @@
+#Body{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  background-image: url('../../assets/Category_Painter.jpg');
+  overflow-x: hidden;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.toaastgreen{
+  color: black;
+  background-color: white;
+  border: 0px;
+}
+.toaastred{
+  color: rgb(255, 0, 0);
+  background-color: white;
+  border: 0px;
+}
+.hide{
+  visibility: hidden;
+}
+.blurr{
+  filter: blur(3px);
+}
+.nonblurr{
+  filter: blur(0px);
+}
+
+.signIn-signUp{
+  position: fixed;
+  left: 30vw;
+  top: -45vh;
+  height: 40vh;
+  width: 40vw;
+  border: 3px solid black;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px black;
+  background-image: linear-gradient(rgb(231, 231, 231), rgb(255, 255, 255));
+  z-index: 2001;
+}
+.signinup-move-down{
+  transform: translateY(70vh);
+  transition: 0.4s ease;
+}
+.signinup-move-up{
+  transform: translateY(-45vh);
+  transition: 0.8s ease;
+}
+.sign-cross{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  height: 30px;
+  width: 30px;
+  border-radius: 25%;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+  z-index: 10;
+}
+.sign-close{
+  height: 1.3rem;
+}
+.sign-h2{
+  position: relative;
+  left: 1.5rem;
+  bottom: 2rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.sign-form{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  /* border: 2px solid red; */
+}
+.signlabelinput{
+  width: 100%;
+  /* border: 2px solid peru; */
+}
+.form-control {
+  height: 55px !important;
+  border: 1.5px solid black !important;
+  border-radius: 0.8rem !important;
+  width: 85% !important;
+  margin-left: 20px !important;
+}
+.react-tel-input {
+  margin-left: 20px;
+}
+.flag-dropdown {
+border: 1.5px solid black !important;
+border-top-left-radius: 0.8rem !important;
+border-bottom-left-radius: 0.8rem !important;
+padding: 0.5rem !important;
+}
+.sign-form-button{
+  margin-top: 1rem;
+  height: 3.5rem;
+  padding: 0rem 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  position: relative;
+  border: 2px solid black;
+  color: white;
+  background-image: linear-gradient(10deg, #5f5e5f 1%,  #111111 99%);
+  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+}
+.sign-form-button:active{
+  box-shadow: 0 0 0 black;
+}
+.otp-main-parent{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.otpmain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1.2rem;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 0 10px black;
+  z-index: 100;
+}
+
+.otpbutton{
+  position: relative;
+  left: 0rem !important;
+  /* bottom: 3rem !important; */
+  cursor: pointer;
+}
+.otpp{
+  position: relative;
+  width: 100%;
+  padding-left: 3rem;
+}
+.otppp{
+  color: blue;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.otpInputDesktop{
+  display: flex;
+}
+
+.otpInput{
+  position: relative;
+  left: 0.5rem;
+  /* border: 2px solid rebeccapurple; */
+}
+.otpInputPhone{
+  display: none !important;
+}
+
+
+.closeUserNav{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  height: 1rem;
+  z-index: 2001 !important;
+  cursor: pointer;
+}
+.user-nav{
+  display: none;
+  position: fixed;
+  top: 3.5rem;
+  right: 0.8rem;
+  height: 25vh;
+  width: 12vw;
+  border: 1px solid black ;
+  background-color: white;
+  z-index: 2001;
+}
+.user-nav-show{
+  display: block;
+}
+ul.no-bullets {
+  display: flex;
+  padding-left: 1.3rem;
+  flex-wrap: wrap;
+  list-style-type: none;
+  /* z-index: 2001; */
+}
+.no-bullets li{
+  color: black;
+  margin-right: 1.8rem;
+  line-height: 2rem;
+  /* border: 2px solid red; */
+  cursor: pointer;
+}
+.userNavProfile{
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 950px){
+  .signIn-signUp{
+    width: 50vw;
+    left: 25vw;
+  }
+
+  .user-nav{
+    width: 15vw;
+  }
+}
+@media (max-width: 770px){
+  .user-nav{
+    top: 3.5rem;
+    right: 0.8rem;
+    height: 16.5vh;
+    width: 17vw;
+  }
+}
+@media (max-width: 670px){
+  .user-nav{
+    font-size: 0.8rem;
+    width: 17vw;
+  }
+}
+@media (max-width: 600px){
+  .sign-h2{
+    font-size: 1.2rem;
+  }
+  .react-tel-input {
+    margin-left: 15px;
+  }
+  .signIn-signUp{
+    width: 60vw;
+    left: 20vw;
+  }
+  .otpInputDesktop{
+    display: none !important;
+  }
+  .otpInputPhone{
+    display: flex !important;
+  }
+  .otpmain{
+    height: 17rem;
+    width: 17rem;
+  }
+  .otpp{
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 570px){
+  .user-nav{
+    font-size: 0.8rem;
+    width: 22vw;
+  }
+}
+@media (max-width: 430px){
+  .react-tel-input {
+    margin-left: 20px;
+  }
+  .signIn-signUp{
+    width: 90vw;
+    left: 5vw;
+    top: -500px;
+  }
+  .user-nav{
+    font-size: 0.8rem;
+    width: 25vw;
+    height: 14vh;
+  }
+}

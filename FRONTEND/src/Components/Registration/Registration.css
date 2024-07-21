@@ -1,0 +1,158 @@
+#Registration{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.registrationFrom{
+    margin-top: 2rem;
+    height: 80vh;
+    width: 80vw;
+    border: 3px solid black;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 0 10px black;
+    background-image: linear-gradient(rgb(231, 231, 231), rgb(255, 255, 255));
+    z-index: 900;
+}
+.registraHead{
+    width: 100%;
+}
+.reg-h2{
+    margin-top: 5rem;
+}
+.reg-h22{
+    width: 60%;
+}
+.sign-formx{
+    width: 50%;
+}
+.regis-tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    margin-top: -10rem;
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid yellow; */
+}
+.workng-tags{
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.6rem;
+    margin: 1rem 1.5rem;
+}
+.gg1, .gg2, .gg5{
+    width: 100%;
+}
+
+.g1{
+    border: 2px green solid;
+    box-shadow: 0 0 5px green;
+}
+.g1:hover{
+    color: green;
+    box-shadow: 0 0 10px green;
+}
+.g2{
+    border: 2px rgb(21, 130, 170) solid;
+    box-shadow: 0 0 5px rgb(21, 130, 170);
+}
+.g2:hover{
+    color: rgb(21, 130, 170);
+    box-shadow: 0 0 10px rgb(21, 130, 170);
+}
+.g3{
+    border: 2px rgb(102, 0, 128) solid;
+    box-shadow: 0 0 5px rgb(102, 0, 128);
+}
+.g3:hover{
+    color: rgb(102, 0, 128);
+    box-shadow: 0 0 10px rgb(102, 0, 128);
+}
+.g4{
+    border: 2px rgb(227, 129, 24) solid;
+    box-shadow: 0 0 5px rgb(227, 129, 24);
+}
+.g4:hover{
+    color: rgb(227, 129, 24);
+    box-shadow: 0 0 10px rgb(227, 129, 24);
+}
+.wa{
+    /* visibility: hidden; */
+    position: absolute;
+}
+@media (max-width: 1050px){
+    .registrationFrom{
+        width: 90vw;
+    }
+    .regis-tags{
+        margin-top: -13rem;
+    }
+}
+
+@media (max-width: 870px){
+    .registrationFrom{
+        justify-content: space-around;
+    }
+    .reg-h22{
+        /* border: 2px solid red; */
+        width: 50%;
+        height: 10%;
+    }
+}
+@media (max-width: 800px){
+    .registrationFrom{
+        justify-content: space-evenly;
+    }
+    .reg-h22{
+        /* border: 2px solid red; */
+        width: 90%;
+        height: 10%;
+    }
+    .regis-tags{
+        margin-top: -3rem;
+        height: 70%;
+        align-items: end;
+        margin-right: 1rem;
+    }
+}
+@media (max-width: 750px){
+    .gg5{
+        visibility: hidden;
+    }
+    .registrationFrom{
+     width: 95vw;
+    }
+}
+@media (max-width: 750px){
+.sign-formx{
+    /* border: 2px solid yellow; */
+    width: 60%;
+}
+.sign-form-button{
+    margin-top: -5rem;
+}
+.regis-tags{
+    margin-top: -8rem;
+    width: 100%;
+    height: 30%;
+}
+}
+
+@media (max-width: 450px){
+    .sign-formx{
+        /* border: 2px solid yellow; */
+        width: 80%;
+    }
+    .regis-tags{
+        margin-top: -12rem;
+    }
+    .gg5{
+        visibility: visible;
+    }
+}

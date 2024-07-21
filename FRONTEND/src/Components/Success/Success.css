@@ -1,0 +1,27 @@
+#Success{
+    height: 70vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.successh1{
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    color: rgb(73, 215, 168);
+    text-shadow: 2px 2px 4px forestgreen;
+}
+.successh3{
+    margin-top: 13rem;
+    position: relative;
+    right: 22.5rem;
+    color: blue;
+}
+.payID{
+    color: black;
+}
+.suc404{
+    position: relative;
+    top: 16rem;
+    right: 43rem;
+}
