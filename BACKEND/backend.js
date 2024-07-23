@@ -100,10 +100,10 @@ backend.post("/prowork/signup", async (req, res) =>{
         const LogInUser = SignUpUser;
         const LoggedInUserObjectID = LogInUser[0]._id;
         console.log(`User Logged In Successfully with Phone Number ${LogInUser[0].PhoneNumber}`);
+    }
         res.send(LogInUser);
         console.log(res)
         return res
-    }
 });
 
 
