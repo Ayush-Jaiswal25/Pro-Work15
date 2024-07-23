@@ -21,17 +21,17 @@ const MongoProductionURL = process.env.MONGO_ATLAS_PRODUCTION_URL;
 let updatedDetails;
 // let SignUpUser, newSignedUpUserInfo, SignedUpUserObjectID;
 
-// const issue2options = {
-//     origin:  "https://prowork.live/",
-//     methods: "GET, POST, PUT, PATCH, POST, DELETE, OPTIONS",
-//     allowedHeaders: 'Content-Type,Authorization',
-//     credentials: true,
-//     maxAge: 3600
-//   };
-//   app.options("/issue-2", cors(issue2options));
+const issue2options = {
+    origin:  "https://prowork.live/",
+    methods: "GET, POST, PUT, PATCH, POST, DELETE, OPTIONS",
+    allowedHeaders: 'Content-Type,Authorization',
+    credentials: true,
+    maxAge: 3600
+  };
+  backend.options("/issue-2", cors(issue2options));
 // backend.use(cors())
 backend.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://prowork.live/");
+    res.setHeader("Access-Control-Allow-Origin", "https://prowork.live");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, POST, DELETE, OPTIONS");
     res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
     next();
