@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import express from 'express'
-// import cors from 'cors'
+import cors from 'cors'
 import Razorpay from 'razorpay';
 import crypto from 'crypto';
 import mongoose from 'mongoose';
