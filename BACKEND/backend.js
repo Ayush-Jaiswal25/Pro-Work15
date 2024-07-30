@@ -37,12 +37,12 @@ backend.use(cors({
 //   };
 //   backend.options("/issue-2", cors(issue2options));
 // // backend.use(cors())
-// backend.use((req, res, next) => {
-//     res.setHeader("Access-Control-Allow-Origin", "https://prowork.live");
-//     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, POST, DELETE, OPTIONS");
-//     res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-//     next();
-//   })
+backend.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "https://prowork.live");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, POST, DELETE, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    next();
+  })
 backend.use(express.json());
 backend.use(express.urlencoded({extended: true}))
 
