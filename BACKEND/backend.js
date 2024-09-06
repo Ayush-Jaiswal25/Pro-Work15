@@ -15,7 +15,6 @@ import UserDetails from './models/UserDetailSchema.js'
 
 const backend = express();
 const Port = process.env.PORT || 3000;
-const MongoDevelopmentURL = process.env.MONGO_ATLAS_DEV_URL;
 const MongoProductionURL = process.env.MONGO_ATLAS_PRODUCTION_URL;
 
 let updatedDetails;
@@ -34,7 +33,7 @@ backend.use(express.urlencoded({extended: true}))
 const razorpay = new Razorpay( { key_id: process.env.RAZORPAY_KEY_ID_DEV , key_secret: process.env.RAZORPAY_KEY_SECRET_DEV } );
 
 main().then(() =>{ console.log("Connection from Database established Successfully") }).catch((err) =>{ console.log(err) })
-async function main(){ await mongoose.connect(MongoDevelopmentURL) }
+async function main(){ await mongoose.connect(MongoProductionURL) }
 
 
 backend.listen(Port, () =>{ console.log(`The server is running on Port number ${Port}`) });
