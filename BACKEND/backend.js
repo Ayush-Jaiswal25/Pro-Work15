@@ -24,7 +24,7 @@ backend.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "https://prowork.live");
     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, POST, DELETE, OPTIONS");
     res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
-    console.log("FUck YOU");
+    console.log("Run Please");
     next();
   })
 backend.use(express.json());
