@@ -11,34 +11,42 @@ export const service_List = [
     {
         Category: 'Electrician',
         image: heroLower_Electrician,
-        URL: 'http://localhost:5000/services/electrician'
+        URL: 'https://prowork.live/services/electrician',
+        // URL: 'http://localhost:5000/services/electrician'
     },
     {
         image: heroLower_Priest,
-        URL: 'http://localhost:5000/services/priest'
+        URL: 'https://prowork.live/services/priest',
+        // URL: 'http://localhost:5000/services/priest'
     },
     {
         image: heroLower_Cook,
-        URL: 'http://localhost:5000/services/cook'
+        URL: 'https://prowork.live/services/cook',
+        // URL: 'http://localhost:5000/services/cook'
     },
     {
         image: heroLower_Talior,
-        URL: 'http://localhost:5000/services/talior'
+        URL: 'https://prowork.live/services/talior'
+        // URL: 'http://localhost:5000/services/talior'
     },
     {
         image: heroLower_Contractor,
-        URL: 'http://localhost:5000/services/contractor'
+        URL: 'https://prowork.live/services/contractor'
+        // URL: 'http://localhost:5000/services/contractor'
     },
     {
         image: Category_Labourer,
-        URL: 'http://localhost:5000/services/labourer'
+        URL: 'https://prowork.live/services/labourer',
+        // URL: 'http://localhost:5000/services/labourer'
     },
     {
         image: Category_Tutor,
-        URL: 'http://localhost:5000/services/tutor'
+        URL: 'https://prowork.live/services/tutor',
+        // URL: 'http://localhost:5000/services/tutor'
     },
     {
         image: Category_Mechanic,
-        URL: 'http://localhost:5000/services/mechanic'
+        URL: 'https://prowork.live/services/mechanic',
+        // URL: 'http://localhost:5000/services/mechanic'
     }
 ]
