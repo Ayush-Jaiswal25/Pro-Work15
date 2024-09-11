@@ -18,6 +18,7 @@ import { categoryList } from '../../assets/CategoryList'
 export let CategoryURL;
 function Category() {
   CategoryURL = window.location.href;
+  console.log(CategoryURL);
   const {
     URL,
     Name, setName,
@@ -163,6 +164,7 @@ function Category() {
       <Helmet><title>Pro Work - Category</title></Helmet>
 
       {categoryList.map((item, index) =>{
+      console.log(item.URL);
         if(CategoryURL == item.URL){
           return(
             <div key={index} className="CategoryBlock">
