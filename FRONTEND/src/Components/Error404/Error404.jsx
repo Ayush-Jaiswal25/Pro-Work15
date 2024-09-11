@@ -2,14 +2,12 @@ import React from 'react'
 import './Error404.css'
 import { Helmet } from 'react-helmet'
 function Error404() {
-  setTimeout(() => {
-    
-    alert("Sorry! This page is out of service")
-  }, 500);
+  setTimeout(() => { alert("Sorry! This page is out of service") }, 500);
   return (
     <div id="Error404">
       <Helmet><title>Pro Work - 404 Error</title></Helmet>
-        <div className="er404heading"><h3>This page is not available for service, sorry for the inconvience</h3></div>
+        <div className="er404heading-laptop"><h3>This page is not available for service, sorry for the inconvience</h3></div>
+        <div className="er404heading-phone"><h3>This page is not available for service</h3></div>
  
         <div className="er404">
             <h1 className='e404 e4 e41'>4</h1>

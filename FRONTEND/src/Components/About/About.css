@@ -22,6 +22,9 @@
     flex-wrap: wrap;
     height: 80%;
     width: 100%;
+    /* border: 2px solid red; */
+    margin-top: -0.1rem;
+    /* margin-bottom: 3rem; */
 }
 .founder-box{
     height: 100%;
@@ -79,4 +82,19 @@
     cursor: pointer;
     margin: 0rem 0.5rem;
     height: 3rem;
+}
+@media (max-width: 430px){
+    .about-content{
+        /* margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        border: 2px solid red;
+        margin-top: -0.1rem;
+        
+        } */
+        margin-bottom: 3rem;
+        }
 }

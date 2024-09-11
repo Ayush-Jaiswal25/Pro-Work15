@@ -1,14 +1,16 @@
 #Error404{
     height: 100vh;
     width: 100vw;
-    border: 2px solid black;
     background-color: white;
 }
-.er404heading{
+.er404heading-laptop{
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 5rem;
+    padding-top: 5rem;
+}
+.er404heading-phone{
+    display: none;
 }
 .er404{
     width: 100%;
@@ -59,4 +61,21 @@
 }
 .home404:active{
     box-shadow: 2px 2px 8px black;
+}
+
+@media (max-width: 430px){
+    #Error404{
+        height: 80vh;
+        width: 100vw;
+        background-color: white;
+    }
+    .er404heading-laptop{
+        display: none;
+    }
+    .er404heading-phone{
+        display: flex;
+        padding-top: 8rem;        
+        width: 100%;
+        justify-content: center;
+    }
 }

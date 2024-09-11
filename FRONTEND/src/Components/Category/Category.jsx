@@ -148,6 +148,16 @@ function Category() {
     async function EditDe(){
       setDataEdited(true)
     }
+
+    // let random;
+    const [ random, setRandom] = useState("");
+    function randomInteger(min, max) {
+      setRandom(Math.floor(Math.random() * (max - min + 1)) + min);
+      console.log(random)
+      console.log("heyee")
+
+    }
+    
   return (
     <div id="Category">
       <Helmet><title>Pro Work - Category</title></Helmet>
@@ -158,10 +168,58 @@ function Category() {
             <div key={index} className="CategoryBlock">
               <h1 className='CategoryBlock-h1'>Book Our Experienced {item.Category}</h1>
               <div className='catcard-div'>
-                <button className='bookService' onClick={ServiceBooking}>Book Serivce</button>
-                <div className="imgcatcard"><img src={item.image} alt="" className="catcard-img-top" /></div>
+                <div className="imgcatcard">
+                  <img src={item.image} alt="" className="catcard-img-top" />
+                </div> 
               </div>
-              <div>{item.Price}</div>
+
+              <div className='service_final'>
+                <label className='chooseTile' htmlFor=""> Choose a Service</label>
+                <div className='service_final_block'>
+                  <table className='service_table'>
+
+                    <tr>
+                      <th>Select</th>
+                      <th className='Srevice'>Service</th>
+                      <th className='price_Range'>Price range</th>
+                    </tr>
+
+                    <tr>
+                      <td><input className='radioC' type="radio" id="html" name="fav_language" value="HTML" /></td>
+                      <td className='table_data'><label for="html">{item.service5}</label></td>
+                      <td><h4>{item.service_Price1}</h4></td>
+                    </tr>
+
+                    <tr>
+                      <td><input className='radioC' type="radio" id="css" name="fav_language" value="CSS" /></td>
+                      <td className='table_data'><label onClick={() =>(randomInteger((item.service_Price1_low), (item.service_Price1_high)))} for="css">{item.service1}</label></td>
+                      <td><h4>{item.service_Price2}</h4></td>
+                    </tr>
+
+                    <tr>
+                      <td><input className='radioC' type="radio" id="css" name="fav_language" value="CSS" /></td>
+                      <td className='table_data'><label onClick={() =>(randomInteger((item.service_Price1_low), (item.service_Price1_high)))} for="css">{item.service1}</label></td>
+                      <td><h4>{item.service_Price2}</h4></td>
+                    </tr>
+
+                    <tr>
+                      <td><input className='radioC' type="radio" id="css" name="fav_language" value="CSS" /></td>
+                      <td className='table_data'><label onClick={() =>(randomInteger((item.service_Price1_low), (item.service_Price1_high)))} for="css">{item.service1}</label></td>
+                      <td><h4>{item.service_Price2}</h4></td>
+                    </tr>
+
+                    <tr>
+                      <td><input className='radioC' type="radio" id="css" name="fav_language" value="CSS" /></td>
+                      <td className='table_data'><label onClick={() =>(randomInteger((item.service_Price1_low), (item.service_Price1_high)))} for="css">{item.service1}</label></td>
+                      <td><h4>{item.service_Price2}</h4></td>
+                    </tr>
+
+                  </table>
+                </div>                
+                <button className='bookService' onClick={ServiceBooking}>Book Serivce</button>
+                {random?(<h2 className='rand_proce'>Rs.{random}</h2>):(<h1></h1>)}
+                
+              </div>
             </div>          
           )
         }
@@ -185,7 +243,7 @@ function Category() {
         <div className='confirm-add'>
           <div>
 
-          <div className='profile-lainput'>
+            <div className='profile-lainput'>
               <label className='profile-label' htmlFor="">House Address</label> 
               {DataUpdatedFirstTime.isDataCreated?(<div>{DataEdited?(<div><input value={HouseAddress} className='profile-input' onChange={(e) =>setHouseAddress(e.target.value)} type="text" />{error.HouseAddress && <span className='errormassDiv'>{error.HouseAddress}</span>}</div>):(<p className="profile-input">{HouseAddress} <img className='Editde' onClick={EditDe} src={Edit} alt="" /> </p>)}</div>):(<div><input placeholder='Enter your House Address' className='profile-input' onChange={(e) =>setHouseAddress(e.target.value)} type="text" />{error.HouseAddress && <span className='errormassDiv'>{error.HouseAddress}</span>}</div>)}                 
             </div>

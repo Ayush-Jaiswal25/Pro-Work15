@@ -304,11 +304,20 @@
 }
 @media (max-width: 440px){
     .sub-box1-right{
-        margin-top: 2rem;
+        /* border: 2px solid red; */
+        /* margin-top: -5rem; */
+    }
+    .sub-box12{
+        height: 57%;
+/* border: 2px solid yellow; */
+    }
+    .box1{
+        height: 150vh;
+        /* border: 2px solid purple; */
     }
     .sub-box1-left-a{
-        margin-top: -28rem;
-        margin-left: 2rem;
+        margin-top: -26rem;
+        margin-left: 1rem;
     }
     .sub-box1-left-b{
         margin-left: 20rem;
@@ -318,7 +327,32 @@
         margin-top: 6.5rem;
     }
     .sub-box1-left-d{
-        margin-left: 20rem;
+        margin-left: 18rem;
         margin-top: -15rem !important;
+    }
+    .sub-box1-right-btn{
+        position: relative;
+        top: 8rem;
+    }
+    .sub-box1-right-title{
+        /* margin-top: 5rem; */
+        position: relative;
+        top: 3.5rem;
+        right: 3.5rem;
+    }
+    .vb{
+        position: relative;
+        top: 0.3rem;
+        left: 8.7rem;
+    }
+    .sub-box1-right-p{
+        position: relative;
+        width: 80%;
+        top: 2.5rem;
+        left: 3rem;
+    }
+    .blob{
+        position: relative;
+        right: 2rem;
     }
 }

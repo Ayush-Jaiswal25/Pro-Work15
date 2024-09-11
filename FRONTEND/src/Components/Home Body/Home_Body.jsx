@@ -119,10 +119,10 @@ function Home_Body() {
         </div>
 
           
-        <div className="sub-box1">
+        <div className="sub-box1 sub-box12">
           <div className="sub-box1-right" data-cursor="-lg" data-cursor-text="PRO WORK"></div>
           <h1 data-cursor="-md -opaque" className="sub-box1-right-title"> Hey!,</h1>
-          <h1 className='sub-box1-right-titlee'>I need a Priest</h1>
+          <h1 className='sub-box1-right-titlee vb'>I need a Priest</h1>
           <p className='sub-box1-right-p'>From Priest to labour, we have more than 8 varities of daily household services available at your door on just one click. Our workers have years of experienceed in their work and they ensure quality work at affordable price. To book a service </p>
           <Link onClick={heroScrollx} to='/services'><button data-cursor="-hidden" className='sub-box1-right-btn'>Click Here</button></Link>
           <img className='blob' src={blob} alt="" />

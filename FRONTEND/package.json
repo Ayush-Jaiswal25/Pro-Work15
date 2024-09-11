@@ -13,6 +13,7 @@
     "appwrite": "^15.0.0",
     "axios": "^1.7.2",
     "framer-motion": "^11.2.12",
+    "frontend": "file:",
     "gsap": "^3.12.5",
     "lenis": "^1.1.5",
     "otp-input-react": "^0.3.0",

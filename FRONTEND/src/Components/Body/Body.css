@@ -275,8 +275,12 @@ ul.no-bullets {
   }
   .signIn-signUp{
     width: 90vw;
+    height: 25vh;
     left: 5vw;
-    top: -500px;
+    top: -350px;
+  }
+  .sign-form-button{
+    top: 3.3rem;
   }
   .user-nav{
     font-size: 0.8rem;

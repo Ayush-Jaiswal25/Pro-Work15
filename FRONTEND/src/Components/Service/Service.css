@@ -55,6 +55,16 @@
 }
 @media (max-width: 430px){
     .service-content{
-        justify-content: center;
+        /* justify-content: center; */
+    }
+    .card{
+        border: 2px solid black;
+        height: 17rem;
+        width: 12rem ;
+        margin: 1rem 0.5rem;
+        margin-left: 0.8rem;
+    }
+    .card-img-top {
+        height: 11rem;
     }
 }
