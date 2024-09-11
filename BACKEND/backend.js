@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import express from 'express'
-// import cors from 'cors'
+import cors from 'cors'
 import Razorpay from 'razorpay';
 import crypto from 'crypto';
 import mongoose from 'mongoose';
@@ -21,21 +21,21 @@ const MongoProductionURL = process.env.MONGO_ATLAS_PRODUCTION_URL;
 let updatedDetails;
 // let SignUpUser, newSignedUpUserInfo, SignedUpUserObjectID;
 
-const issue2options = {
-    origin:  "https://prowork.live/",
-    methods: "GET, POST, PUT, PATCH, POST, DELETE, OPTIONS",
-    allowedHeaders: 'Content-Type,Authorization',
-    credentials: true,
-    maxAge: 3600
-  };
-  backend.options("/issue-2", cors(issue2options));
+
+  backend.use(cors({
+    // origin: 'https://prowork.live',
+    origin: 'http://localhost:5000', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  }));
 // backend.use(cors())
-backend.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://prowork.live");
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, POST, DELETE, OPTIONS");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-    next();
-  })
+// backend.use((req, res, next) => {
+//     res.setHeader("Access-Control-Allow-Origin", "https://prowork.live");
+//     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, POST, DELETE, OPTIONS");
+//     res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+//     console.log(res)
+//     next();
+//   })
 backend.use(express.json());
 backend.use(express.urlencoded({extended: true}))
 
@@ -80,7 +80,6 @@ backend.get("/prowork/Founder", async (req, res) =>{
 
 
 backend.post("/prowork/signup", async (req, res) =>{
-    // res.set('Access-Control-Allow-Origin', '*');
     const SignUpUser = await Signup.find({PhoneNumber: req.body.PhoneNumber});
 
     if(SignUpUser[0] == undefined){
@@ -110,6 +109,7 @@ backend.post("/prowork/userdetails",async (req, res) =>{
     updatedDetails = await userDetails.save();
     res.send(updatedDetails)
 });
+
 backend.get("/prowork/userdetails/:id", async (req, res) =>{
     const UserSignupObjectID = req.params.id
     const userDetails = await UserDetails.find({UserSignupObjectID:UserSignupObjectID});
